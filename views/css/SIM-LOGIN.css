@@ -1,0 +1,304 @@
+/*---ESTILIZADO DE LA VERSIÓN MOVIL---*/
+
+/*ESTILIZADO GENERAL:*/
+*{
+	box-sizing: border-box; /*al agregar un borde, entra dentro de un parametro de tamaño indicado*/
+		
+}
+
+html{
+	scroll-behavior: smooth; /*movimiento más natural entre apartados*/
+}
+
+body{
+	margin: 0;
+	font-family: Century Gothic;
+}
+
+h1{font-size: 3em;}
+
+h2{font-size: 2.5em;}
+
+h3{font-size: 2em;}
+
+p{font-size: 1.25em;}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+li{font-size: 1.25em;}
+
+a{text-decoration: none;}
+
+button{
+	font-size: 1em;
+	font-weight: bold;
+	padding: 6px 20px;
+	border: 0px;
+	border-radius: 1px;
+	box-shadow: 1px 2px 10px rgb(0, 0, 0, 20);
+	color: black;
+	background-color: #e0a102;
+}
+
+button:hover{
+	background-color: #bf8e02;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+/*ESTILIZADO DE CABECERA*/
+header{
+	background-color: rgb(13, 13, 13);
+}
+
+header .logo{
+	margin: 0px;
+	padding: 0px 30px; /*vertical x horizontal*/
+	padding-top: 20px;
+}
+
+header .logo img{
+	height: 60px;
+	margin-right: 10px;
+}
+
+header .nameCompany{
+	font-size: 1.5em;
+	color: rgb(245, 245, 245);
+	font-weight: bold;
+}
+
+header .container{
+	display: flex; /*Para la alineación horizontal*/
+	flex-direction: column; /*Coloca cada item uno debajo de otro*/
+	align-items: center; /*Centra lo items*/
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px; /*Relleno abajo*/
+}
+
+header a{
+	padding: 5px 12px;
+	font-weight: bold;
+	color: rgb(245, 245, 245);
+}
+
+header a:hover{
+	color: #e0a102;
+}
+
+header select{
+	font-weight: bold;
+	font-family: Century Gothic;
+	font-size: 1em;
+	background-color: #e0a102;
+	margin: 5px 12px;
+	padding: 5px 20px;
+	border: 0px;
+	border-radius: 15px;
+}
+
+header select:hover{
+	background-color: #bf8e02;
+}
+
+
+/*ESTILIDAZO DEL APARTADO PRINCIPAL*/
+/*ESTILIDAZO DEL TÍTULO*/
+#main{
+	background-color: rgb(245, 245, 245);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+}
+
+#tittle{
+	text-align: initial;
+	padding: 0px 20px;
+	color: rgb(20, 20, 20);
+}
+
+#tittle h1{
+	margin: 0px;
+}
+
+#tittle p{
+	margin: 0px;
+	padding-bottom: 30px;
+}
+
+
+/*ESTILIZADO DEL FORMULARIO*/
+#login{
+	width: 90%;
+}
+
+#login .e-mail{
+	font-weight: bold;
+	font-family: Century Gothic;
+	font-size: 0.9em;
+	margin: 10px 0px;
+	padding: 5px 20px;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 2px;
+	width: 100%;
+}
+
+#login .password{
+	font-weight: bold;
+	font-family: Century Gothic;
+	font-size: 0.9em;
+	margin: 10px 0px;
+	padding: 5px 20px;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 2px;
+	width: 100%;
+}
+
+#login button{
+	margin-top: 10px;
+}
+
+
+/*ESTILIZADO DE LA ALTERNATIVA*/
+#alt a{
+	text-decoration: none;
+	color: rgb(20, 20, 20);
+}
+
+#alt a:hover{
+	font-weight: bold;
+}
+
+
+/*ESTILIZADO DEL PIE DE PÁGINA*/
+footer{
+	background-color: #e0a102;
+	font-size: 0.6em;
+	color: rgb(20, 20, 20);
+	font-weight: bold;
+}
+
+footer .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer .toe{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+}
+
+footer h3{
+	margin-bottom: 0px;
+}
+
+footer .redes{
+	flex-direction: row;
+}
+
+footer img{
+	margin-top: 10px;
+}
+
+footer a{
+	color: rgb(20, 20, 20);
+}
+
+footer a:hover{
+	color: rgb(245, 245, 245);
+}
+
+footer .finalContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+
+/*---ESTILIZADO DE LA VERSIÓN DE ESCRITORIO---*/
+@media (min-width: 720px){
+	/*ESTILIZADO DE CABECERA:*/
+	header{
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+	}
+
+	header .logo{
+		padding: 0px 30px;
+	}
+
+	header .container{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px 5px;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0px;
+	}
+
+	header ul{
+		margin: 0px;
+    	padding: 0px;
+    	border: 0px;
+	}
+
+	header a{
+		padding-top: 10px;
+		padding-bottom: 0px;
+	}
+
+	header .nameCompany{
+		margin: 0px;
+		padding-bottom: 15px;
+	}
+
+
+	/*ESTILIZADO DEL APARTADO PRINCIPAL*/
+	#main{
+		height: 100vh;
+		padding-top: 11vh;
+	}
+
+	#tittle{
+		max-width: 50%;
+		padding: 0px 0px;
+	}
+
+	#login{
+		max-width: 45%;
+	}
+
+
+	/*ESTILIZADO DEL PIE DE PÁGINA*/
+	footer .container{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
